@@ -25,7 +25,7 @@
                 @foreach($shortLinks as $row)
                         <tr>
                             <td>{{ $row->id }}</td>
-                            <td><a href="{{ route('shorten.link', $row->code) }}" target="_blank">{{ route('shorten.link', $row->code) }}</a></td>
+                            <td><a href="{{ route('shorten.link', $row->code) }}" target="_blank">{{ route('', $row->code) }}</a></td>
                             <td>{{ $row->link }}</td>
                         </tr>
                     @endforeach

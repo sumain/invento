@@ -36,5 +36,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('generated-link', 'ShortLinkController@index')->name('generated-link');
 Route::get('new-link', 'ShortLinkController@create')->name('new-link');
 Route::post('generated-link', 'ShortLinkController@store')->name('saveTheLink');
+Route::get('shorten.link', 'ShortLinkController@shortenLink')->name('shorten.link');
 
 Route::get('task1', 'TaskController@index');
+Route::get('taskOutput', 'TaskController@arrayIndex')->name('taskOutput');

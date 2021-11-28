@@ -32,6 +32,12 @@
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Task 1</span>
                 </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="{{ route('new-link') }}">New Link</a>
+                        <a class="collapse-item" href="{{ route('generated-link') }}">Generated Links</a>
+                    </div>
+                </div>
             </li>
 			
             <li class="nav-item">

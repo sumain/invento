@@ -27,4 +27,16 @@ class TaskController extends Controller
 		}
 		return implode(', ',$index);
 	}
+	
+	public function arrayIndex(){
+		$var ='[[1, 5],[9, -7],[0, 8],[6, 3],[4, 11],[14, 0],[8, 1],[4, 9]]';
+		
+		$data['var'] = $var;
+		$array =[[1, 5],[9, -7],[0, 8],[6, 3],[4, 11],[14, 0],[8, 1],[4, 9]];
+
+		$targetValue =9;
+		$pair_index = $this->searchPair($array,$targetValue);
+		$data['pair'] = $pair_index;
+		return view('task',$data);
+	}
 }
